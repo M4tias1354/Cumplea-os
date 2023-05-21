@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: image-set("assets/flores.jpg");
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 31px;
+  }
+  
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .menu-icon-bar {
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    margin-bottom: 4px;
+  }
+  
+  main {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    font-size: 150px; /* Tamaño del texto más grande */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 0; /* Eliminar margen superior */
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background-color: #ffffff;
+    border: 1px solid #e94c4c;
+    border-radius: 10px;
+    animation: fadeInVideos 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .note-content {
+    text-align: center;
+  }
+  
+  .note-content p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  @keyframes fadeInVideos {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .note2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1550px;
+    background-color: #ffffff;
+    border: 1px solid #e94c4c;
+    border-radius: 10px;
+    margin-top: 49px; /* Agrega espacio entre las notitas */
+    animation: fadeInVideos 1s ease forwards;
+    opacity: 0;
+    margin-bottom: 140px;
+  }
+  
+  .note-content2 {
+    text-align: center;
+  }
+  
+  .note-content2 p {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 34px;
+    margin-top: 10px;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .menu.active {
+      display: block;
+    }
+  
+    .menu li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px; /* Reducir el tamaño del texto para pantallas más pequeñas */
+    }
+  }
+  
